@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&display=swap');
+$fontFamily: "Josefin Sans";
+$minWidth: 320px;
+$maxWidth: 1170;
+$maxWidthContainer:1170;
+$md1: $maxWidthContainer;
+$md2: 768;
+$md3: 375;
+$md4: 480;
+
+._container{
+	max-width: $maxWidthContainer + px;
+	margin: 0 auto;
+	@media (max-width:  $md1+px) {
+		max-width: 768px;
+	}
+	@media (max-width: $md2+px) {
+		max-width: 375px;
+		padding: 0 10px;
+	}
+	@media (max-width: $md3+px) {
+		max-width: none;
+		padding: 0 10px;
+	}
+	@media (max-width: $md4+px) {
+		max-width: none;
+		padding: 0 10px;
+	}
+}
+
+
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	box-sizing: border-box;
+}
+:focus,:active{outline:none;}
+a:focus,a:active{outline:none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body {
+	height: 100%;
+	width:100%;
+	font-size:100%;
+	line-height: 1;
+	font-size: 14px;
+	font-family: $fontFamily;
+}
+
+input,button,textarea{font-family: inherit;}
+
+input::-ms-clear{display:none;}
+button{cursor:pointer;}
+button::-moz-focus-inner{padding:0;border:0;}
+a, a:visited{text-decoration:none;}
+a:hover{text-decoration:none;}
+ul,ol,li{list-style:none;}
+img{vertical-align:top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit; font-weight: 400;}
+
+
+.text{
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24 / 16 * 100%;
+	color: #6C6C72;
+}
